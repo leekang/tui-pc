@@ -1,0 +1,8 @@
+.layout-demo{
+	text-align:center;
+	[class*="tui-col-"]{
+		div {
+			background-color:#ccc;
+		}
+	}
+}

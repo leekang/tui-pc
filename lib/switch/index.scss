@@ -1,0 +1,82 @@
+.tui-switch {
+	display: inline-block;
+	input[type="checkbox"]{
+		outline:none;
+		position: relative;
+		display: inline-block;
+		width: $switch-width;
+		height: $switch-width/2;
+		padding: 0;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+		border-radius: 999px;
+		vertical-align: middle;
+		transition: background-color 300ms, border-color 300ms;
+		-webkit-transition: background-color 300ms, border-color 300ms;
+		cursor:pointer;
+		&:after {
+			content: '';
+			display: block;
+			width: $switch-width/2 - 2;
+			height: $switch-width/2 - 2;
+			background-color: #fff;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 999px;
+			box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 0.5px 2px rgba(0, 0, 0, 0.16), 0 5px 16px rgba(0, 0, 0, 0.15);
+			vertical-align: middle;
+			transition: transform 300ms;
+			-webkit-transition: transform 300ms;
+			box-sizing: border-box;
+		}
+		&:checked {
+			background-color: $switch-color;
+			border-color: $switch-color;
+		}
+		&:checked::after {
+			transform: translateX($switch-width/2);
+			-webkit-transform: translateX($switch-width/2);
+		}
+		&:disabled{
+			border: 1px solid #eee;
+			&:checked{
+				background-color: mix($switch-color,#fff,50%);
+				border-color: mix($switch-color,#fff,50%);
+			}
+			&:after{
+				border: 1px solid rgba(0, 0, 0, 0.02);
+				box-shadow: 0 3px 1px rgba(0, 0, 0, 0.02), 0 0.5px 2px rgba(0, 0, 0, 0.04), 0 5px 16px rgba(0, 0, 0, 0.04);
+			}
+		}
+	}
+}
+.tui-switch-sm{
+	input[type="checkbox"]{
+		width: $switch-width-sm;
+		height: $switch-width-sm/2;
+		&:after {
+			width: $switch-width-sm/2 - 2;
+			height: $switch-width-sm/2 - 2;
+		}
+		&:checked::after {
+			transform: translateX($switch-width-sm/2);
+			-webkit-transform: translateX($switch-width-sm/2);
+		}
+	}
+}
+
+.tui-switch-md{
+	input[type="checkbox"]{
+		width: $switch-width-md;
+		height: $switch-width-md/2;
+		&:after {
+			width: $switch-width-md/2 - 2;
+			height: $switch-width-md/2 - 2;
+		}
+		&:checked::after {
+			transform: translateX($switch-width-md/2);
+			-webkit-transform: translateX($switch-width-md/2);
+		}
+	}
+}
+
+

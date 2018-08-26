@@ -1,0 +1,478 @@
+.clearfix{
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom:1
+}
+.hide{
+	display:none;
+}
+//display
+.d-ib{
+	display: inline-block;
+}
+.d-b{
+	display: block;
+}
+.c-po{
+	cursor: pointer;
+}
+
+//vertical align
+.va-tt{
+	vertical-align: text-top;
+}
+.va-bl{
+	vertical-align: baseline;
+}
+.va-s{
+	vertical-align: sub;
+}
+//text size
+.text-sm{
+	font-size:$text-sm;
+}
+.text-xs{
+	font-size:$text-xs;
+}
+.text-normal{
+	font-size:$text-normal;
+}
+.text-lg{
+	font-size:$text-lg;
+}
+.text-md{
+	font-size:$text-md;
+}
+
+.text-20{
+	font-size:20px;
+}
+//text other
+.text-ellipsis {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text-ellipsis-2 {
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.text-ellipsis-3 {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.wob-a{
+	word-break: break-all;
+}
+//font weight
+.fw-200{
+	font-weight:200;
+}
+.fw-bold{
+	font-weight:bold;
+}
+.font-smoothing{
+ -webkit-font-smoothing: antialiased;
+}
+.font-smoothing-auto{
+	-webkit-font-smoothing: auto;
+}
+
+//text color
+.text-white{
+	color:$text-white;
+}
+.text-light {
+    color: $text-light;
+}
+.text-red{
+	color:$text-red;
+}
+.text-lighter{
+    color: $text-lighter;
+}
+.text-info{
+    color: $info-color;
+}
+.text-success{
+    color: $success-color;
+}
+.text-primary{
+    color: $primary-color;
+}
+.text-warning{
+    color: $warning-color;
+}
+.text-error{
+    color: $error-color;
+}
+.text-disabled{
+    color:#ccc;
+}
+//text position
+.text-center{
+	text-align:center;
+}
+.text-left{
+  text-align:left;
+}
+.text-right{
+	text-align:right;
+}
+.pos-r{
+  position: relative;
+}
+.pos-a{
+  position: absolute;
+}
+
+.flex-center{
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+}
+
+.block-center{
+	margin-left:auto;
+	margin-right:auto;
+}
+.o-a{
+	overflow:auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+}
+.o-h{
+	overflow:hidden;
+}
+
+//width
+.w-full{
+  width:100%
+}
+.h-m-full{
+  min-height: 100%;
+}
+.h-full{
+  height: 100%;
+}
+.full{
+  width: 100%;
+  height: 100%;
+}
+//height
+.h-30{
+	height:30px;
+}
+.w-1-3{
+	width:percentage(1/3);
+}
+.w-1-4{
+	width:percentage(1/4);
+}
+.w-1-5{
+	width:percentage(1/5);
+}
+.w-1-6{
+	width:percentage(1/6);
+}
+.w-1-7{
+	width:percentage(1/7);
+}
+.w-1-10{
+	width:percentage(1/10);
+}
+.w-80{
+	width:80px;
+}
+.h-50{
+	height:50px;
+}
+.h-70{
+	height:70px;
+}
+.h-none {
+    height: 0;
+}
+
+//float
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+
+
+//background
+.bg-white{
+	background-color:$bg-white;
+}
+.bg-primary{
+	background-color:$primary-color;
+}
+.bg-light{
+	background-color:$bg-light;
+}
+.bg-lighter{
+	background-color:$bg-lighter;
+}
+
+//space
+.p{
+  padding:$space;
+}
+.p-none{
+  padding:0!important;
+}
+.p-sm{
+	padding:$space-sm;
+}
+.p-md{
+	padding:$space-md;
+}
+.p-xs{
+	padding:$space-xs;
+}
+
+.p-l{
+    padding-left:$space;
+}
+.p-l-xs{
+    padding-left:$space-xs;
+}
+.p-l-md{
+    padding-left:$space-md;
+}
+
+.p-l-sm{
+    padding-left:$space-sm;
+}
+
+.p-l-lg{
+    padding-left:$space-lg;
+}
+.p-l-n{
+    padding-left:0!important;
+}
+.p-r{
+  padding-right:$space;
+}
+.p-r-xs{
+  padding-right:$space-xs;
+}
+.p-r-sm{
+  padding-right:$space-sm;
+}
+.p-r-md{
+  padding-right:$space-md;
+}
+.p-r-lg{
+  padding-right:$space-lg;
+}
+.p-r-xs{
+  padding-right:$space-xs;
+}
+
+
+.p-t{
+    padding-top:$space;
+}
+.p-t-n{
+    padding-top:0 !important;
+}
+
+.p-t-xs{
+    padding-top:$space-xs;
+}
+.p-t-sm{
+    padding-top:$space-sm;
+}
+.p-t-md{
+    padding-top:$space-md;
+}
+.p-b-n{
+    padding-bottom:0 !important;
+}
+.p-b-sm{
+    padding-bottom:$space-sm;
+}
+
+.p-b-md{
+    padding-bottom:$space-md;
+}
+.p-b{
+    padding-bottom:$space;
+}
+.p-b-lg{
+    padding-bottom:$space-lg;
+}
+.p-b-xs{
+    padding-bottom:$space-xs;
+}
+
+.padder{
+  padding-left:$space;
+  padding-right:$space;
+}
+.no-padder{
+  padding-left:0!important;
+  padding-right:0!important;
+}
+
+.padder-sm{
+  padding-left:$space-sm;
+  padding-right:$space-sm;
+}
+.padder-md{
+  padding-left:$space-md;
+  padding-right:$space-md;
+
+}
+.padder-xs{
+  padding-left:$space-xs;
+  padding-right:$space-xs;
+}
+
+.padder-v{
+    padding-top:$space;
+    padding-bottom:$space;
+}
+.padder-v-md{
+    padding-top:$space-md;
+    padding-bottom:$space-md;
+}
+.padder-v-lg{
+    padding-top:$space-lg;
+    padding-bottom:$space-lg;
+}
+
+.padder-v-sm{
+    padding-top:$space-sm;
+    padding-bottom:$space-sm;
+}
+.padder-v-xs{
+    padding-top:$space-xs;
+    padding-bottom:$space-xs;
+}
+//margin值
+.m-t{
+    margin-top: $space;
+}
+.m-t-md{
+    margin-top: $space-md;
+}
+.m-t-lg{
+    margin-top: $space-lg;
+}
+.m-b{
+    margin-bottom: $space;
+}
+.m-b-sm{
+    margin-bottom: $space-sm;
+}
+.m-b-xs{
+    margin-bottom: $space-xs;
+}
+
+.m-b-md{
+    margin-bottom: $space-md;
+}
+.m-b-lg{
+    margin-bottom: $space-lg;
+}
+.m-l-md{
+    margin-left: $space-md;
+}
+.m-t-sm{
+    margin-top: $space-sm;
+}
+.m-t-xs{
+    margin-top: $space-xs;
+}
+.m-t-n-xxs{
+	margin-top:-1px;
+}
+.m-r{
+    margin-right: $space;
+}
+.m-r-md{
+    margin-right: $space-md;
+}
+.m-r-xs{
+    margin-right: $space-xs;
+}
+
+.m-r-sm{
+    margin-right: $space-sm;
+}
+.m-l-sm{
+    margin-left: $space-sm;
+}
+.m-l-xs{
+    margin-left: $space-xs;
+}
+.m-l{
+    margin-left: $space;
+}
+.op-5{
+	opacity:0.5;
+}
+.op-8{
+	opacity:0.8;
+}
+
+//border
+
+.r-2{
+	border-radius:2px;
+}
+.r-4{
+	border-radius:4px;
+}
+.r-8{
+  border-radius:8px;
+}
+.r-100{
+  border-radius:100px;
+}
+.r-circle{
+  border-radius:50%;
+}
+.b{
+	border:1px solid $border-color-base;
+}
+.b-t{
+	border-top:1px solid $border-color-base;
+}
+.b-b{
+	border-bottom:1px solid $border-color-base;
+}
+.b-r{
+  border-right:1px solid $border-color-base;
+}
+
+.b-l{
+  border-left:1px solid $border-color-base;
+}
+.bs-da{
+	border-style: dashed!important;
+}
+
+.poe-n{
+	pointer-events:none;
+}
+
+

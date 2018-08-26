@@ -1,0 +1,75 @@
+.tui-modal-bg{
+	background: $modal-mask-background;
+	position:fixed;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	z-index:$zindex-modal-mask;
+}
+
+.tui-modal-con{
+	position:fixed;
+	z-index:$zindex-modal;
+	top:0;
+	bottom:0;
+	padding:$modal-top 0;
+	height:100%;
+	width:100%;
+	@include flexbox;
+	@include align-items(flex-start);
+	@include justify-content(center);
+}
+.tui-modal-con-bg{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.tui-modal-wrap{
+	position:relative;
+	background-color:$modal-background;
+	border-radius:$modal-radius;
+	max-width:100%;
+}
+.tui-modal-close{
+	position: absolute;
+	right: $space;
+	top: $space;
+	z-index: 10;
+	padding:$space-xs;
+	font-weight: 700;
+	line-height: 1;
+	color: #999;
+	cursor:pointer;
+}
+
+.tui-modal-header{
+	padding:$space;
+	font-size:$text-normal;
+	font-weight:bold;
+	line-height:21px;
+	color:#666;
+	border-bottom:1px solid $border-color-base;
+}
+.tui-modal-body{
+	padding:$space;
+	line-height:$modal-body-lineheight;
+}
+.tui-modal-footer{
+	padding:$space-sm $space;
+	border-top:1px solid $border-color-base;
+}
+
+.tui-modal-confirm{
+	.tui-modal-con-wrap{
+		padding-top:15px;
+		padding-bottom:10px;
+	}
+	.tui-modal-header,
+	.tui-modal-body{
+		padding-top:5px;
+		padding-bottom:10px;
+	}
+}

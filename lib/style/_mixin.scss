@@ -1,0 +1,6 @@
+@import "./mixin/flex";		//1px
+
+@mixin prefix($attr,$d){
+    -webkit-#{$attr}: $d;
+    #{$attr}: $d;
+}

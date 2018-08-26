@@ -1,0 +1,53 @@
+.tui-carousel{
+	/**background-color:#000;*/
+	position:relative;
+	overflow:hidden;
+}
+
+.tui-carousel-wrap{
+	@include prefix(transition,transform 0.06s);
+	&.tui-carousel-animate{
+		@include prefix(transition,transform .4s ease);
+	}
+}
+.tui-carousel-box,
+.tui-carousel,
+.tui-carousel-wrap,
+.tui-carousel-item{
+	height:100%;
+}
+
+.tui-carousel-wrap{
+	@include flexbox;
+	@include flex-wrap(nowrap);
+}
+
+.tui-carousel-item{
+	height:100%;
+	width:100%;
+	@include flex-shrink(0);
+}
+.tui-carousel-indicator{
+	position:absolute;
+	bottom:5px;
+	width:100%;
+	text-align:center;
+	span{
+		display:inline-block;
+		position:relative;
+		padding:5px;
+		&:after{
+			content:'';
+			display:block;
+			width:8px;
+			height:8px;
+			border-radius:4px;
+			background-color:#808080;
+		}
+		&.active:after{
+			background-color:#fff;
+		}
+	}
+}
+
+

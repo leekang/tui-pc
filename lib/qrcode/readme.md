@@ -1,0 +1,1 @@
+需要引用qrcode.min.js     在lib下面有

@@ -1,0 +1,43 @@
+.tui-notification{
+	position:fixed;
+	right:0;
+	top:0;
+	width:340px;
+	z-index:999;
+	.tui-notification-item{
+		min-height:50px;
+		background-color:#fff;
+		border-radius:4px;
+		margin:$space-sm;
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.04);
+	}
+	.tui-notification-title{
+		font-size:$text-normal;
+		color:$text-dark;
+		margin-bottom:3px;
+	}
+	.tui-notification-content{
+		padding:$space;
+	}
+	.tui-notification-icon-error{
+		color:$error-color;
+	}
+	.tui-notification-icon-warning{
+		color:$warning-color;
+	}
+	.tui-notification-icon-success{
+		color:$success-color;
+	}
+	.tui-notification-icon-info{
+		color:$info-color;
+	}
+
+	.tui-notification-icon{
+		padding-left:$space;
+		font-size:32px;
+	}
+	.tui-notification-close{
+		cursor:pointer;
+		padding-right:$space;
+	}
+}

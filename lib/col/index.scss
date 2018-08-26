@@ -1,0 +1,58 @@
+@mixin tui-row-grid($col){
+	@for $i from 1 through $col {
+		.tui-col-#{$i} {
+			width: percentage($i/$col);
+		}
+	}
+}
+@mixin tui-row-xs-grid($col){
+	@for $i from 1 through $col {
+		.tui-col-xs-#{$i} {
+			width: percentage($i/$col)!important;
+		}
+	}
+}
+
+@mixin tui-row-sm-grid($col){
+	@for $i from 1 through $col {
+		.tui-col-sm-#{$i} {
+			width: percentage($i/$col)!important;
+		}
+	}
+}
+
+@mixin tui-row-md-grid($col){
+	@for $i from 1 through $col {
+		.tui-col-md-#{$i} {
+			width: percentage($i/$col)!important;
+		}
+	}
+}
+
+@mixin tui-row-lg-grid($col){
+	@for $i from 1 through $col {
+		.tui-col-lg-#{$i} {
+			width: percentage($i/$col)!important;
+		}
+	}
+}
+
+@include tui-row-grid(24);
+
+@media screen and (max-width: $layout-width-xs) {
+	@include tui-row-xs-grid(24);
+}
+
+@media (min-width: $layout-width-xs) and (max-width: $layout-width-sm){
+	@include tui-row-sm-grid(24);
+}
+
+
+@media (min-width: $layout-width-sm) and (max-width: $layout-width-md){
+	@include tui-row-md-grid(24);
+}
+
+@media screen and (min-width: $layout-width-md) {
+	@include tui-row-lg-grid(24);
+}
+

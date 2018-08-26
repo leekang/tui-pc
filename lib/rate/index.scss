@@ -1,0 +1,32 @@
+.tui-rate{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'anticon';
+	font-weight: normal;
+	font-style: normal;
+}
+.tui-rate-star{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin-right: 8px;
+	position: relative;
+}
+.tui-rate-star-full{
+	color:#F7A700!important;
+}
+.tui-rate-star-nor{
+	color: #dcdcdc;
+}
+.tui-rate-align{
+	vertical-align: -webkit-baseline-middle;
+}
+.tui-rate-text{
+	color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-weight: 500;
+}

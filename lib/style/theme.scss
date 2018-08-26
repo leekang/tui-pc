@@ -1,0 +1,167 @@
+// Color
+$primary-color					:#66aaee;
+$info-color							:#61A1EB;
+$success-color					:#2CB22D;
+$error-color						:#EF2E23;
+$warning-color					:#ff904b;
+$disabled-color					:#D2D2D2;
+
+$text-dark							:#333;
+$text-light							:#999;
+$text-lighter						:#dce5ec;
+$text-red								:#F55C44;
+$text-white							:#FFF;
+// ------ Base & Require ------
+
+$body-background				:#F6F6F6;
+
+$bg-light								:#f6f8f8;
+$bg-lighter								:#fafafa;
+$bg-white								:#fff;
+
+//layout
+
+$layout-width-xs				:768px;		//小于
+$layout-width-sm				:992px;
+$layout-width						:992px;
+$layout-width-md				:1170px;
+
+$font-family            : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-seri;
+
+$code-family						:Consolas,Menlo,Courier,monospace;
+$text-color							:#666;
+$text-size-base					:13px;
+$line-height-base				:1.428;
+$border-radius-lg				:6px;
+$border-radius-base			:4px;
+$border-radius-sm				:3px;
+
+//text size
+$text-h1								:36px;
+$text-h2								:30px;
+$text-lg								:20px;
+$text-md								:16px;
+$text-normal						:14px;
+$text-sm								:13px;
+$text-xs								:12px;
+
+//loading
+$loading-height					:60px;
+
+// Border color
+$border-color-base			:#e5e5e5;				 // base border outline a component
+$border-color-split			:#ccc;				// split border inside a component
+
+//modal
+$modal-background				:#fff;
+$modal-mask-background	:rgba(0, 0, 0, 0.5);
+$modal-radius						:5px;
+$modal-top							:30px;
+$modal-body-lineheight	:1.25;
+$modal-btn-active				:#f6f6f6;
+
+
+// z-index list
+$z-index-border					:5;
+$zindex-affix						:10;
+
+$zindex-modal-mask			:990;
+$zindex-modal						:1000;
+
+$zindex-notification		:1010;
+$zindex-message					:1010;
+$zindex-popover					:1030;
+$zindex-picker					:1050;
+$zindex-dropdown				:1050;
+$zindex-tooltip					:1060;
+
+// Input
+$input-placeholder-color:#ccc;
+$input-color						:$text-color;
+$input-border-color			:$border-color-base;
+$input-bg								:#fff;
+$input-disabled-bg			:#f7f7f7;
+$input-border-radius		:2px;
+
+//list
+$list-bg								:#fff;
+$list-select-bg					:#eaeaea;
+$list-footer-color			:#999;
+
+//space
+$space-xs								:5px;
+$space-sm								:10px;
+$space									:15px;
+$space-md								:20px;
+$space-lg								:30px;
+
+//button
+$btn-default-bg					:#fff;
+$btn-primary-bg					:#4694e4;
+$btn-disabled-bg				:#e5e5e5;
+$btn-warning-bg					:#ff904b;
+$btn-error-bg						:#EF2E23;
+$btn-success-bg					:#63CA32;
+
+/**$btn-primary-border			:mix($btn-primary-bg,#000,90%);*/
+/**$btn-disabled-border		:mix($btn-disabled-bg,#000,90%);*/
+/**$btn-warning-border			:mix($btn-warning-bg,#000,90%);*/
+/**$btn-success-border			:mix($btn-success-bg,#000,90%);*/
+/**$btn-error-border				:mix($btn-error-bg,#000,90%);*/
+
+$btn-primary-border			:$btn-primary-bg;
+$btn-disabled-border		:$btn-disabled-bg;
+$btn-warning-border			:$btn-warning-bg;
+$btn-success-border			:$btn-success-bg;
+$btn-error-border				:$btn-error-bg;
+
+
+
+
+
+$btn-border-radius			:3px;
+$btn-font-size					:13px;
+$btn-font-small					:12px;
+$btn-font-large					:18px;
+$btn-font-weight				:500;
+
+$btn-line-height				:1.5;
+
+$btn-sm-padding					:1px 7px;
+$btn-padding						:5px 12px;
+$btn-lg-padding					:7px 14px;
+
+
+
+
+//switch
+$switch-color						:#66aaee;
+$switch-width						:46px;
+$switch-width-sm				:36px;
+$switch-width-md				:56px;
+
+//tabs
+$tabs-header-height			:40px;
+
+
+//dropdown
+$dropdown-z-index:1050;
+//form
+$form-item-space:24px;
+$form-item-space-sm:15px;
+$form-item-height:32px;
+
+
+$outline-blur-size:0;
+$outline-width:2px;
+
+$input-padding:4px 7px;
+$input-font-size:12px;
+$input-border:#d9d9d9;
+$input-border-radius:4px;
+$radio-border: #d9d9d9;
+$radio-checked-color: #108ee9;
+$checkbox-border: #d9d9d9;
+$checkbox-checked-color: #108ee9;
+$input-number-checked: #108ee9;
+

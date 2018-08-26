@@ -1,0 +1,44 @@
+@import "~tui/lib/style/theme";	//主题变量
+@import "~tui/lib/style/index";	//主题
+#appWrapper{
+}
+.apps-list-wrap{
+	padding:$space-sm;
+}
+.apps-list-item{
+	display:block;
+	width:100%;
+	text-align:center;
+	height:50px;
+	line-height:50px;
+	background-color:#fff;
+	transition:border-radius 0.4s;
+	color:#666;
+	&:hover{
+		border-radius:25px;
+	}
+}
+
+.carousel-demo{
+	height:450px;
+	width:800px;
+	margin:0 auto;
+}
+
+.dropdown-menu{
+}
+.test-select{
+	margin: 100px 0 0 200px;
+}
+.w-50{
+	width:50px;
+}
+.w-100{
+	width:100px;
+}
+.w-200{
+	width:200px;
+}
+.p-100{
+	padding:100px;
+}

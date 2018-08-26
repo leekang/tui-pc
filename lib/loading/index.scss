@@ -1,0 +1,74 @@
+.tui-loading-mask{
+	position: fixed;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+.tui-loading-view-wrap{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	height: $loading-height;
+	width: $loading-height;
+	margin-top: -1/2 * $loading-height;
+	margin-left: -1/2 * $loading-height;
+}
+
+.tui-loading-view-default{
+		width:100%;
+		height:100%;
+    background-color:#fff;
+    border-radius:10px;
+		.tui-loading-bg{
+			display:block;
+			margin:0 auto;
+			height:100%;
+			width:100%;
+			border-radius:10px;
+		}
+		.tui-loading-spin{
+			display:block;
+			position: absolute;
+			top:0;
+			left:0;
+			animation: tui-loading-spin 1050ms infinite;
+			height: 100%;
+			width:100%;
+		}
+}
+
+@keyframes tui-loading-spin {
+		0% {
+				transform: rotate(0deg);
+		}
+		100% {
+				transform: rotate(360deg);
+		}
+}
+@-moz-keyframes tui-loading-spin {
+		0% {
+				transform: rotate(0deg);
+		}
+		100% {
+				transform: rotate(360deg);
+		}
+}
+@-webkit-keyframes tui-loading-spin {
+		0% {
+				transform: rotate(0deg);
+		}
+		100% {
+				transform: rotate(360deg);
+		}
+}
+@-o-keyframes tui-loading-spin {
+		0% {
+				transform: rotate(0deg);
+		}
+		100% {
+				transform: rotate(360deg);
+		}
+}
+

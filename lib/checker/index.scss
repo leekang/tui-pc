@@ -1,0 +1,176 @@
+.tui-checker-item{
+	cursor:pointer;
+}
+.tui-checker-item-default{
+	position:relative;
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	height:30px;
+	padding:0 20px;
+	border:1px solid #bbb;
+	border-radius:$border-radius-sm;
+	overflow:hidden;
+	color:#666;
+	&:before{
+		content: '';
+    position: absolute;
+    display: block;
+		background-color:#bbb;
+		width:22px;
+		height:22px;
+		right:0;
+		bottom:0;
+		@include prefix(transform,translate(50%, 50%) rotateZ(45deg));
+	}
+	&:after{
+		content: '';
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+		@include prefix(transform,translate(0, -50%) rotateZ(-45deg));
+	}
+	&.active{
+		color:$primary-color;
+		border:1px solid $primary-color;
+		&:before{
+			background-color:$primary-color;
+		}
+	}
+}
+.tui-checker-item-single{
+	position:relative;
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	height:30px;
+	padding:0 20px;
+	border:1px solid #bbb;
+	border-radius:$border-radius-sm;
+	overflow:hidden;
+	color:#666;
+	&.active{
+		color:$primary-color;
+		border:1px solid $primary-color;
+	}
+}
+
+.tui-checker-item-single2{
+	position:relative;
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	height:30px;
+	padding:0 15px;
+	border:1px solid #bbb;
+	border-radius:15px;
+	font-size:$text-sm;
+	overflow:hidden;
+	color:#666;
+	&.active{
+		color:#fff;
+		background-color:$primary-color;
+		border:1px solid $primary-color;
+	}
+}
+
+
+.tui-checker-item-radio{
+	.checker-radio{
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 14px;
+		height: 14px;
+		border: 1px solid $radio-border;
+		background-color: #fff;
+		border-radius: 14px;
+		@include prefix(transition,border-color 0.3s);
+		&:after{
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			left: 3px;
+			top: 3px;
+			border-radius: 4px;
+			display: block;
+			content:'';
+			background-color: $radio-checked-color;
+			opacity: 0;
+			@include prefix(transform,scale(0));
+			@include prefix(transition,all 0.2s cubic-bezier(0.78, 0.14, 0.15, 0.86));
+		}
+	}
+	&.active{
+		.checker-radio{
+			border-color: $radio-checked-color;
+			&:after{
+				opacity: 1;
+				@include prefix(transform,scale(1));
+			}
+		}
+	}
+}
+.tui-checker-item-checkbox{
+	.checker-checkbox{
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 14px;
+		height: 14px;
+		border: 1px solid $radio-border;
+		background-color: #fff;
+		border-radius: 3px;
+		@include prefix(transition,all 0.3s);
+		&:after{
+			transform: rotate(45deg) scale(1);
+			position: absolute;
+			left: 4px;
+			top: 1px;
+			display: block;
+			width: 5px;
+			height: 8px;
+			border: 2px solid #fff;
+			border-top: 0;
+			border-left: 0;
+			content: " ";
+			display:none;
+			@include prefix(transition,all .1s cubic-bezier(.71,-.46,.88,.6));
+		}
+	}
+	&.active{
+		.checker-checkbox{
+			background-color: $radio-checked-color;
+			border-color: $radio-checked-color;
+			&:after{
+				display:block;
+				opacity: 1;
+			}
+		}
+	}
+
+	&.tui-checker-item-disabled{
+		color: rgba(0,0,0,.25);
+		cursor: not-allowed;
+		.checker-checkbox{
+			border-color: #d9d9d9;
+			background-color: #f3f3f3;
+		}
+		&.active{
+			.checker-checkbox{
+				&:after{
+					border-color: rgba(0,0,0,.25);
+				}
+			}
+		}
+
+	}
+}
+

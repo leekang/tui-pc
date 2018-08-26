@@ -1,0 +1,28 @@
+.tui-selectPkg{
+	position:relative;
+}
+.tui-selectPkg-clean{
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	width:24px;
+	color:rgba(0, 0, 0, 0.25);
+	font-size:16px;
+}
+.tui-selectPkg-cleanable{
+	.tui-selectPkg-clean{
+		display:none;
+	}
+	.ant-select-selection{
+		cursor:text;
+	}
+	&:hover{
+		.ant-select-arrow{
+			display:none;
+		}
+		.tui-selectPkg-clean{
+			@include flexbox;
+		}
+	}
+}

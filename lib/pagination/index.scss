@@ -1,0 +1,104 @@
+.tui-pagination-default{
+	display:inline-block;
+	.tui-pagination-item{
+		cursor: pointer;
+		border-radius: 4px;
+		width:28px;
+		height:28px;
+		border:1px solid #d9d9d9;
+		background-color: #fff;
+		user-select: none;
+		&:hover{
+			border-color:#49a9ee;
+		}
+		&.active{
+			background-color:#49a9ee;
+			border-color:#49a9ee;
+			color:#fff;
+		}
+		&.disabled{
+			cursor:not-allowed;
+			img{
+				opacity:0.8;
+			}
+		}
+	}
+	.tui-pagination-pageSizeOpt{
+		width:84px;
+		.ant-select{
+			height:28px;
+		}
+		.ant-select-selection--single{
+			height:28px;
+		}
+		.ant-select-selection__rendered{
+			line-height:28px;
+		}
+	}
+	.tui-pagination-jumper-ipt{
+		width:50px;
+		height:28px;
+	}
+	.tui-pagination-prev{
+		display:block;
+		height:8px;
+	}
+	.tui-pagination-more{
+		display:block;
+		width:16px;
+		opacity:0.8;
+		cursor:pointer;
+	}
+}
+
+
+.tui-pagination-small{
+	display:inline-block;
+	.tui-pagination-item{
+		cursor: pointer;
+		border-radius: 4px;
+		width:20px;
+		height:20px;
+		user-select: none;
+		&:hover{
+			color:#49a9ee;
+		}
+		&.active{
+			background-color:#49a9ee;
+			color:#fff;
+		}
+		&.disabled{
+			cursor:not-allowed;
+			img{
+				opacity:0.8;
+			}
+		}
+	}
+	.tui-pagination-pageSizeOpt{
+		width:84px;
+		.ant-select{
+			height:22px;
+		}
+		.ant-select-selection--single{
+			height:22px;
+		}
+		.ant-select-selection__rendered{
+			line-height:22px;
+		}
+	}
+	.tui-pagination-jumper-ipt{
+		width:50px;
+		height:22px;
+	}
+	.tui-pagination-prev{
+		display:block;
+		height:8px;
+	}
+	.tui-pagination-more{
+		display:block;
+		width:8px;
+		opacity:0.8;
+		cursor:pointer;
+	}
+}
+

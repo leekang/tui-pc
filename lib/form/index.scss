@@ -1,0 +1,23 @@
+.tui-form-item{
+	margin-bottom:$form-item-space;
+}
+.tui-form-item-label{
+	padding:7px 0;
+	line-height:$form-item-height - 14px;
+	text-align:right;
+}
+.tui-form-item-vertical{
+	padding-top:$space-xs;
+	padding-bottom:$space-xs;
+	display:block;
+	.tui-form-item-vertical-tit{
+		line-height:20px;
+		height:20px;
+		color:$text-light;
+	}
+}
+.tui-form-compact{
+	.tui-form-item{
+		margin-bottom:$form-item-space-sm;
+	}
+}
